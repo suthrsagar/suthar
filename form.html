@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Form Clone</title>
+  <link rel="web icon" type="png" href="images.jpeg">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .form-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 500px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #343a40;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #495057;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: #80bdff;
+      box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+    }
+    button {
+      background-color: #007bff;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #reset{
+        color: rgb(0, 0, 0);
+        background-color: red;
+  
+    }
+    #reset:hover {
+      background-color: #dd6969;
+      color: rgb(90, 87, 87);
+    }
+    body {
+        background-color: #f1f2f3;
+    }
+    * {
+        
+        margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+ 
+   <form
+  action="https://formspree.io/f/xldgdegr"
+  method="POST"
+> <h1>कृपया फॉर्म भरें</h1>
+  <label>
+    Your Name:
+    <input type="name" name="Your Name" required>
+  </label>
+  <label>
+    Father Name: 
+    <input type="name" name="Father name"required>
+  </label>
+  <label>
+    Mather Name:
+    <input type="name" name="Mather name"required>
+  </label>
+  <label>
+    Aadhar Card Number :
+    <input type="number" name="number" required>
+  </label>
+  <label>
+    Your email:
+    <input type="email" name="email"required>
+  </label>
+  <label>
+    password :
+    <input type="password" name="password"required>
+  </label>
+  <label for="your language">your Language</label>
+  <select id="rating" required>
+    <option value=""><Select:disabled></Select:disabled>Select Language</option>
+    <option value="1">Hindi </option>
+    <option value="1">English</option>
+   
+  </select>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <label for="rating">Rate Us</label>
+  <select id="rating" required>
+    <option value="">Select rating</option>
+    <option value="1">1 - Poor</option>
+    <option value="2">2 - Fair</option>
+    <option value="3">3 - Good</option>
+    <option value="4">4 - Very Good</option>
+    <option value="5">5 - Excellent</option>
+  </select>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+
+<button id="reset" type="reset">reset</button>
+</form>
+ 
+</body>
+</html>
